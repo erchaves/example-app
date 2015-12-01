@@ -15,7 +15,7 @@ Object.keys(config.entry).forEach(function (x) {
 config.devtool = 'source-map';
 
 config.module.loaders.push({
-  test: /\.js$/,
+  test: /\.(js|jsx)$/,
   loaders: ['react-hot', 'babel'],
   include: [config.context]
 });
