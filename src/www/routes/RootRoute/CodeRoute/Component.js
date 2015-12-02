@@ -19,7 +19,8 @@ class CodeRouteComponent extends Component {
           <Textarea
             className="col-sm-12"
             onChange={onTextareaChange}
-            value={textareaValue} />
+            value={textareaValue}
+            placeholder="Add some markdown code" />
         </div>
       </div>
     );
