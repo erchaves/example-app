@@ -9,7 +9,7 @@ const propTypes = {
   textareaValue: PropTypes.string,
 };
 
-class CodeRouteComponent extends Component {
+class HomeRouteComponent extends Component {
   render() {
     const { onTextareaChange, textareaValue } = this.props;
 
@@ -27,7 +27,7 @@ class CodeRouteComponent extends Component {
   }
 }
 
-CodeRouteComponent.propTypes = propTypes;
+HomeRouteComponent.propTypes = propTypes;
 
 const stateToProps = ({ markdown }) => ({
   textareaValue: markdown,
@@ -39,4 +39,4 @@ const dispatchToProps = dispatch => ({
   }, 300),
 });
 
-export default connect(stateToProps, dispatchToProps)(CodeRouteComponent);
+export default connect(stateToProps, dispatchToProps)(HomeRouteComponent);

@@ -13,15 +13,14 @@ const RootRoute = {
   getChildRoutes(location, callback) {
     require.ensure([], function (require) {
       callback(null, [
-        require('./PreviewRoute').default,
-        require('./AboutRoute').default,
+        require('./about').default,
       ]);
     });
   },
 
   getIndexRoute(location, callback) {
     require.ensure([], function (require) {
-      callback(null, require('./CodeRoute').default);
+      callback(null, require('./home').default);
     });
   },
 };

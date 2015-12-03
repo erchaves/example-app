@@ -15,9 +15,6 @@ class NavView extends Component {
           </div>
           <ul className="nav navbar-nav navbar-left">
             <li>
-              <Link to="/preview">Preview</Link>
-            </li>
-            <li>
               <Link to="/about">about</Link>
             </li>
           </ul>
