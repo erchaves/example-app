@@ -1,2 +1,1 @@
-import RootRoute from './RootRoute';
-export default RootRoute;
+module.exports = require('./RootRoute');

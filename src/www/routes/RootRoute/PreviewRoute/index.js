@@ -1,8 +1,6 @@
-import PreviewRouteComponent from './Component';
+import Component from './Component';
 
-const PreviewRoute = {
+export default {
   path: 'preview',
-  component: PreviewRouteComponent,
+  component: Component,
 };
-
-export default PreviewRoute;
