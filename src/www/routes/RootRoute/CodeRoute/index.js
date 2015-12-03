@@ -1,7 +1,5 @@
-import CodeRouteComponent from './Component';
+import Component from './Component';
 
-const CodeRoute = {
-  component: CodeRouteComponent,
+export default {
+  component: Component,
 };
-
-export default CodeRoute;
