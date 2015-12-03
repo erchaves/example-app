@@ -7,6 +7,12 @@ var PATH_DIST = path.resolve(__dirname, '../www');
 module.exports = {
   context: PATH_SRC,
 
+  resolve: {
+    alias: {
+      '_utils': path.join(PATH_SRC, '/utils'),
+    },
+  },
+
   entry: {
     client: './www/client'
   },
