@@ -14,6 +14,7 @@ const RootRoute = {
     require.ensure([], function (require) {
       callback(null, [
         require('./PreviewRoute').default,
+        require('./AboutRoute').default,
       ]);
     });
   },

@@ -17,6 +17,9 @@ class NavView extends Component {
             <li>
               <Link to="/preview">Preview</Link>
             </li>
+            <li>
+              <Link to="/about">about</Link>
+            </li>
           </ul>
         </div>
       </nav>

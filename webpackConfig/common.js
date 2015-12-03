@@ -1,8 +1,14 @@
 var path = require('path');
 var webpack = require('webpack');
 
-var PATH_SRC = path.resolve(__dirname, '../src');
-var PATH_DIST = path.resolve(__dirname, '../www');
+var PATH_ROOT = path.resolve(__dirname, '../');
+var PATH_SRC = path.join(PATH_ROOT, '/src');
+var PATH_DIST = path.join(PATH_ROOT, '/www');
+var PATH_UTILS = path.join(PATH_SRC, '/utils');
+
+console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
+console.log(PATH_SRC);
+console.log(PATH_UTILS);
 
 module.exports = {
   context: PATH_SRC,
@@ -15,6 +21,14 @@ module.exports = {
     path: PATH_DIST,
     filename: '[name].js',
     chunkFilename: '[name].js'
+  },
+
+  // the alias wasn't working unfortunately
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+    alias: {
+      'utils': PATH_UTILS,
+    },
   },
 
   module: {
