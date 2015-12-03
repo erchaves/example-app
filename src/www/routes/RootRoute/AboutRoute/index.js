@@ -1,7 +1,8 @@
-import Comp from './Component';
-import indexRoute from '../../../../utils/indexRoute';
+import PreviewRouteComponent from './Component';
 
-export default indexRoute({
+const PreviewRoute = {
   path: 'about',
-  component: Comp,
-});
+  component: PreviewRouteComponent,
+};
+
+export default PreviewRoute;
